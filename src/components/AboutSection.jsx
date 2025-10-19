@@ -13,10 +13,11 @@ export default function AboutSection() {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "3+", label: "Years Experience" },
-    { number: "25+", label: "Happy Clients" },
-    { number: "100%", label: "Satisfaction Rate" }
+    { number: "5+", label: "Projects Completed" },
+    { number: "2+", label: "Years Experience" },
+    { number: "10+", label: "Tech Stacks Used" },
+    // { number: "100%", label: "Satisfaction Rate" }
+    { number: "15+", label: "Frameworks & Libraries Learned" }
   ]
 
   useEffect(() => {
@@ -71,24 +72,23 @@ export default function AboutSection() {
             </h3>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-              I'm a creative developer with a passion for building exceptional digital experiences. 
-              With expertise in modern web technologies, I specialize in creating interactive, 
-              performant applications that push the boundaries of what's possible on the web.
+              I specialize in React.js, Node.js, Express, and modern web technologies, with strong experience in backend architecture, RESTful APIs, and database design (PostgreSQL, MongoDB). I also have a flair for 3D web experiences using React Three Fiber, creating projects that are not just functional, but visually engaging and innovative.
             </p>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-              My approach combines technical excellence with creative vision, ensuring every 
-              project not only functions flawlessly but also delivers an memorable user experience. 
-              I believe in the power of clean code, innovative design, and continuous learning.
+              From designing smooth user interfaces to implementing robust backend logic, scalable databases, and end-to-end solutions, I focus on building applications that make an impact.
+              Currently, I’m exploring AI integrations, interactive web visualizations, and advanced full-stack techniques, pushing my projects beyond conventional web design.
             </p>
 
+            <a href="/resume.pdf" download>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-6 py-3 border border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-black transition-all duration-300"
+              className="inline-flex items-center px-6 py-3 border border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-black transition-all duration-300 mt-10"
             >
               Download Resume
             </motion.button>
+            </a>
           </motion.div>
 
           <motion.div

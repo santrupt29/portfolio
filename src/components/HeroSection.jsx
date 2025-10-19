@@ -53,7 +53,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
           <motion.h2
-    className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6"
+    className="text-3xl md:text-4xl lg:text-4xl font-extrabold text-white mb-6"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
@@ -65,12 +65,12 @@ export default function HeroSection() {
           className="mb-6"
         >
           <div className="overflow-hidden">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent leading-tight">
               FULL STACK
             </h1>
           </div>
           <div className="overflow-hidden">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-amber-500 via-amber-200 to-white bg-clip-text text-transparent leading-tight">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-amber-500 via-amber-200 to-white bg-clip-text text-transparent leading-tight">
               DEVELOPER
             </h1>
           </div>
@@ -80,8 +80,8 @@ export default function HeroSection() {
           ref={subtitleRef}
           className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-        I am a full stack MERN developer with a passion for building web applications that are both functional and aesthetically pleasing. I am a quick learner and I am always looking to improve my skills.
-        
+          Hi, I’m Santrupt, a full-stack developer passionate about building interactive, high-performance web applications.
+
         </motion.p>
 
         <motion.div 

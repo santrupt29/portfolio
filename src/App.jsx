@@ -50,7 +50,7 @@ function App() {
         onClick={() => setCurrentView(currentView === 'portfolio' ? 'interactive' : 'portfolio')}
         className="fixed top-4 right-4 z-50 px-4 py-2 bg-amber-500 text-black rounded-lg hover:bg-amber-400 transition-colors font-semibold"
       >
-        {currentView === 'portfolio' ? '3D Demo' : 'Portfolio'}
+        {currentView === 'portfolio' ? '3D' : 'Portfolio'}
       </button>
 
       {currentView === 'portfolio' ? (

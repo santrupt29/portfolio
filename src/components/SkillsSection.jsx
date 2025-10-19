@@ -6,38 +6,70 @@ export default function SkillsSection() {
   const sectionRef = useRef()
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
-  const skills = [
-    {
-      category: "Frontend",
-      technologies: [
-        { name: "React", level: 95, color: "from-blue-400 to-blue-600" },
-        { name: "Vue.js", level: 90, color: "from-green-400 to-green-600" },
-        { name: "TypeScript", level: 90, color: "from-blue-500 to-blue-700" },
-        { name: "Three.js", level: 85, color: "from-purple-400 to-purple-600" },
-        { name: "Next.js", level: 88, color: "from-gray-400 to-gray-600" }
-      ]
-    },
-    {
-      category: "Backend",
-      technologies: [
-        { name: "Node.js", level: 92, color: "from-green-500 to-green-700" },
-        { name: "Python", level: 88, color: "from-yellow-400 to-yellow-600" },
-        { name: "PostgreSQL", level: 85, color: "from-blue-600 to-blue-800" },
-        { name: "MongoDB", level: 83, color: "from-green-600 to-green-800" },
-        { name: "GraphQL", level: 80, color: "from-pink-400 to-pink-600" }
-      ]
-    },
-    {
-      category: "Tools & Design",
-      technologies: [
-        { name: "Figma", level: 90, color: "from-purple-500 to-purple-700" },
-        { name: "Docker", level: 85, color: "from-blue-500 to-blue-700" },
-        { name: "AWS", level: 82, color: "from-orange-400 to-orange-600" },
-        { name: "Git", level: 95, color: "from-red-400 to-red-600" },
-        { name: "Blender", level: 75, color: "from-orange-500 to-orange-700" }
-      ]
-    }
-  ]
+const skills = [
+  {
+    category: "Frontend",
+    technologies: [
+      { name: "React", level: 90, label: "Expert", color: "from-blue-400 to-blue-600" },
+      { name: "Tailwind CSS", level: 85, label: "Advanced", color: "from-blue-500 to-blue-700" },
+      { name: "React Three Fiber", level: 80, label: "Intermediate", color: "from-green-400 to-green-600" },
+      { name: "GSAP", level: 75, label: "Intermediate", color: "from-purple-400 to-purple-600" },
+      { name: "Framer Motion", level: 70, label: "Intermediate", color: "from-gray-400 to-gray-600" }
+    ]
+  },
+  {
+    category: "Backend",
+    technologies: [
+      { name: "Node.js", level: 90, label: "Expert", color: "from-green-500 to-green-700" },
+      { name: "MongoDB", level: 85, label: "Advanced", color: "from-green-600 to-green-800" },
+      { name: "Supabase", level: 85, label: "Advanced", color: "from-yellow-400 to-yellow-600" },
+      { name: "PostgreSQL", level: 80, label: "Advanced", color: "from-blue-600 to-blue-800" },
+    ]
+  },
+  {
+    category: "Deployment and Tools",
+    technologies: [
+      { name: "Vercel", level: 90, label: "Expert", color: "from-purple-500 to-purple-700" },
+      { name: "Git", level: 90, label: "Expert", color: "from-blue-500 to-blue-700" },
+      { name: "Figma", level: 80, label: "Advanced", color: "from-orange-400 to-orange-600" },
+      // { name: "Git", level: 5, label: "Expert", color: "from-red-400 to-red-600" },
+      // { name: "Blender", level: 3, label: "Intermediate", color: "from-orange-500 to-orange-700" }
+    ]
+  }
+]
+
+  // const skills = [
+  //   {
+  //     category: "Frontend",
+  //     technologies: [
+  //       { name: "React", level: 95, color: "from-blue-400 to-blue-600" },
+  //       { name: "Vue.js", level: 90, color: "from-green-400 to-green-600" },
+  //       { name: "TypeScript", level: 90, color: "from-blue-500 to-blue-700" },
+  //       { name: "Three.js", level: 85, color: "from-purple-400 to-purple-600" },
+  //       { name: "Next.js", level: 88, color: "from-gray-400 to-gray-600" }
+  //     ]
+  //   },
+  //   {
+  //     category: "Backend",
+  //     technologies: [
+  //       { name: "Node.js", level: 92, color: "from-green-500 to-green-700" },
+  //       { name: "Python", level: 88, color: "from-yellow-400 to-yellow-600" },
+  //       { name: "PostgreSQL", level: 85, color: "from-blue-600 to-blue-800" },
+  //       { name: "MongoDB", level: 83, color: "from-green-600 to-green-800" },
+  //       { name: "GraphQL", level: 80, color: "from-pink-400 to-pink-600" }
+  //     ]
+  //   },
+  //   {
+  //     category: "Tools & Design",
+  //     technologies: [
+  //       { name: "Figma", level: 90, color: "from-purple-500 to-purple-700" },
+  //       { name: "Docker", level: 85, color: "from-blue-500 to-blue-700" },
+  //       { name: "AWS", level: 82, color: "from-orange-400 to-orange-600" },
+  //       { name: "Git", level: 95, color: "from-red-400 to-red-600" },
+  //       { name: "Blender", level: 75, color: "from-orange-500 to-orange-700" }
+  //     ]
+  //   }
+  // ]
 
   return (
     <section 

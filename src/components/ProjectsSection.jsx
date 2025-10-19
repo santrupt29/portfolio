@@ -12,16 +12,16 @@ export default function ProjectsSection() {
     {
       title: "PC Forge- Custom PC Builder",
       description: "A full stack web app for custom PC building with compatibility checking of all parts.",
-      image: "/api/placeholder/600/400",
+      image: "/pc-forge.png",
       tech: ["React", "Express.js", "MongoDB", "Gemini API"],
       github: "https://github.com/santrupt29/pc_forge",
-      live: "the-pc-forge.vercel.app",
+      live: "https://the-pc-forge.vercel.app",
       featured: true
     },
         {
       title: "Zync- Real-time team collaboration platform",
       description: "a full-stack real-time communication platform inspired by Slack, enabling seamless team collaboration.",
-      image: "/api/placeholder/600/400",
+      image: "/zync.png",
       tech: ["React", "Express.js", "MongoDB", "Stream Chat", "Clerk Auth", "Inngest"],
       github: "https://github.com/santrupt29/zync",
       live: "https://zync-frontend.vercel.app/",
@@ -30,7 +30,7 @@ export default function ProjectsSection() {
     {
       title: "3D Portfolio Website",
       description: "Interactive 3D portfolio built with React Three Fiber featuring immersive animations.",
-      image: "/api/placeholder/600/400",
+      image: "/portfolio.png",
       tech: ["React", "Three.js", "R3F", "GSAP"],
       github: "https://github.com/santrupt29/portfolio",
       live: "#",

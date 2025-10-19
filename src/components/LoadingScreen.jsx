@@ -49,7 +49,7 @@ export default function LoadingScreen() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl font-bold bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent mb-4"
             >
-              Creative Developer
+              Loading
             </motion.h1>
             
             <div className="w-64 h-1 bg-slate-700 rounded-full mx-auto mb-4">

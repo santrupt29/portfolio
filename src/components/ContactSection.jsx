@@ -1,11 +1,35 @@
 // components/ContactSection.jsx
 import { useState, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from 'lucide-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 
 export default function ContactSection() {
   const sectionRef = useRef()
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
+const socials = [
+  {
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/santrupt29",
+    type: "lucide",
+    icon: Linkedin
+  },
+  {
+    label: "GitHub",
+    link: "https://github.com/santrupt29",
+    type: "lucide",
+    icon: Github
+  },
+  {
+    label: "X",
+    link: "https://x.com/SantruptP70660",
+    type: "fa",
+    icon: faXTwitter
+  }
+]
+
+
   
   const [formData, setFormData] = useState({
     name: '',
@@ -32,19 +56,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@yourname.dev",
-      link: "mailto:hello@yourname.dev"
+      value: "santrupt.potphode29@gmail.com",
+      link: "mailto:santrupt.potphode29@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91-9823541475",
+      link: "tel:+91-9823541475"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Mumbai, India",
       link: "#"
     }
   ]
@@ -84,7 +108,7 @@ export default function ContactSection() {
             <div>
               <h3 className="text-3xl font-bold text-white mb-6">Let's Talk</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                I'm currently available for freelance work and exciting full-time opportunities. 
+                I'm currently available for summer internship opportunities. 
                 Whether you have a project in mind or just want to chat about the latest in web development, 
                 I'd love to hear from you.
               </p>
@@ -107,6 +131,26 @@ export default function ContactSection() {
                   </div>
                 </motion.a>
               ))}
+<div className="flex items-center gap-6 mt-8">
+  {socials.map((social, index) => (
+    <motion.a
+      key={index}
+      href={social.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      whileHover={{ scale: 1.2 }}
+      className="text-gray-300 hover:text-amber-400 transition-colors"
+    >
+      {social.type === "lucide" ? (
+        <social.icon className="w-6 h-6" />
+      ) : (
+        <FontAwesomeIcon icon={social.icon} className="w-6 h-6" />
+      )}
+    </motion.a>
+  ))}
+</div>
+
+
             </div>
           </motion.div>
 
