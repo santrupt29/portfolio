@@ -47,13 +47,15 @@ export default function Navigation() {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent cursor-pointer"
-            onClick={() => scrollToSection('hero')}
-          >
-            Portfolio
-          </motion.div>
+         <motion.div
+  whileHover={{ scale: 1.05, textShadow: "0px 0px 8px #fbbf24" }}
+  transition={{ type: "spring", stiffness: 300 }}
+  className="text-2xl font-bold cursor-pointer bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
+  onClick={() => scrollToSection('hero')}
+>
+  <p>&lt;⚙️Santrupt&gt;</p>
+</motion.div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
