@@ -9,6 +9,15 @@ export default function ProjectsSection() {
   const [activeProject, setActiveProject] = useState(0)
 
   const projects = [
+        {
+  title: "HireLyze - AI-powered hiring and talent analytics platform",
+  description: "An intelligent platform leveraging AI to screen, analyze, and match talent seamlessly with job postings, enhancing recruitment processes end-to-end.",
+  image: "/hirelyze.png",
+  tech: ["React", "Express", "Supabase", "ioredis", "Google GenAI", "vectorDB"],
+  github: "https://github.com/santrupt29/ai-resume-screener",
+  live: "https://hirelyzehq.vercel.app",
+  featured: true
+},
     {
       title: "PC Forge- Custom PC Builder",
       description: "A full stack web app for custom PC building with compatibility checking of all parts.",
@@ -27,15 +36,6 @@ export default function ProjectsSection() {
       live: "https://zync-frontend.vercel.app/",
       featured: true
     },
-    {
-  title: "HireLyze - AI-powered hiring and talent analytics platform",
-  description: "An intelligent platform leveraging AI to screen, analyze, and match talent seamlessly with job postings, enhancing recruitment processes end-to-end.",
-  image: "/hirelyze.png",
-  tech: ["React", "Express", "Supabase", "ioredis", "Google GenAI", "vectorDB"],
-  github: "https://github.com/santrupt29/ai-resume-screener",
-  live: "https://hirelyzehq.vercel.app",
-  featured: true
-},
     {
       title: "3D Portfolio Website",
       description: "Interactive 3D portfolio built with React Three Fiber featuring immersive animations.",
