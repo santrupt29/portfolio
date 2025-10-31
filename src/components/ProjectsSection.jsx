@@ -28,6 +28,15 @@ export default function ProjectsSection() {
       featured: true
     },
     {
+  title: "HireLyze - AI-powered hiring and talent analytics platform",
+  description: "An intelligent platform leveraging AI to screen, analyze, and match talent seamlessly with job postings, enhancing recruitment processes end-to-end.",
+  image: "/hirelyze.png",
+  tech: ["React", "Express", "Supabase", "ioredis", "Google GenAI", "vectorDB"],
+  github: "https://github.com/santrupt29/ai-resume-screener",
+  live: "https://hirelyzehq.vercel.app",
+  featured: true
+},
+    {
       title: "3D Portfolio Website",
       description: "Interactive 3D portfolio built with React Three Fiber featuring immersive animations.",
       image: "/portfolio.png",
