@@ -18,6 +18,16 @@ export default function ProjectsSection() {
   live: "https://hirelyzehq.vercel.app",
   featured: true
 },
+{
+  title: "Evento - AI-powered event management SaaS",
+  description:
+    "A full-stack SaaS platform for discovering, creating, and managing events, where AI helps organizers generate event descriptions and categories from a simple prompt while the app handles onboarding, ticketing with QR codes, subscriptions, and analytics.",
+  image: "/evento.png",
+  tech: ["Next.js", "Tailwind CSS", "Convex", "Clerk", "shadcn/ui", "Google GenAI"],
+  github: "https://github.com/santrupt29/ai-event-organizer",
+  live: "https://eventohq.vercel.app",
+  featured: true,
+},
     {
       title: "PC Forge- Custom PC Builder",
       description: "A full stack web app for custom PC building with compatibility checking of all parts.",
