@@ -89,6 +89,15 @@ export default function AboutSection() {
               Download Resume
             </motion.button>
             </a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center px-6 py-3 border border-slate-500 text-slate-300 rounded-lg hover:bg-slate-500 hover:text-black transition-all duration-300 mt-10 ml-4"
+            >
+              View Resume
+            </motion.button>
+          </a>
           </motion.div>
 
           <motion.div
