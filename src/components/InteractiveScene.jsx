@@ -9,7 +9,7 @@ function InteractiveScene() {
   return (
     <div className="relative w-full h-screen">
       {/* Controls */}
-      <div className="absolute top-4 left-4 z-10 bg-black/50 backdrop-blur-sm rounded-lg p-4 text-white">
+      <div className="absolute top-4 left-4 z-10 rounded-lg p-4 text-white">
         <div className="space-y-4">
           <label className="block">
             <span className="text-sm font-medium">Sphere Count: {sphereCount}</span>

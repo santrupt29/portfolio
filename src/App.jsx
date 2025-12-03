@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       <Leva hidden />
-      <LoadingScreen />
+      {/* <LoadingScreen /> */}
       
       {/* View Toggle Button */}
       <button

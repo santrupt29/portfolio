@@ -48,7 +48,7 @@ export default function HeroSection() {
       id="hero"
     >
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 opacity-50" />
+      <div className="absolute inset-0 opacity-50" />
       
       {/* Content */}
       <div className="container mx-auto px-6 text-center relative z-10">

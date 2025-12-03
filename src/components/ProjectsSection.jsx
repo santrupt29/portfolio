@@ -46,15 +46,15 @@ export default function ProjectsSection() {
       live: "https://zync-frontend.vercel.app/",
       featured: true
     },
-    {
-      title: "3D Portfolio Website",
-      description: "Interactive 3D portfolio built with React Three Fiber featuring immersive animations.",
-      image: "/portfolio.png",
-      tech: ["React", "Three.js", "R3F", "GSAP"],
-      github: "https://github.com/santrupt29/portfolio",
-      live: "#",
-      featured: true
-    },
+    // {
+    //   title: "3D Portfolio Website",
+    //   description: "Interactive 3D portfolio built with React Three Fiber featuring immersive animations.",
+    //   image: "/portfolio.png",
+    //   tech: ["React", "Three.js", "R3F", "GSAP"],
+    //   github: "https://github.com/santrupt29/portfolio",
+    //   live: "#",
+    //   featured: true
+    // },
 
   ]
 
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
       id="projects" 
       className="min-h-screen py-20 relative"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-transparent" />
+      <div className="absolute inset-0 to-transparent" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div

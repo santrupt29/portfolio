@@ -79,7 +79,7 @@ const socials = [
       id="contact" 
       className="min-h-screen py-20 relative"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-900" />
+      <div className="absolute inset-0   background: #090909" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div

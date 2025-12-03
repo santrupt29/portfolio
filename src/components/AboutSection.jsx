@@ -45,7 +45,7 @@ export default function AboutSection() {
       id="about" 
       className="min-h-screen py-20 relative"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-transparent" />
+      <div className="absolute inset-0" />
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div

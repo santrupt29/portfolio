@@ -264,7 +264,7 @@ function CameraController() {
 function IcoSphereScene({ 
   enableOrbitControls = true,
   enablePostProcessing = true,
-  backgroundColor = "#000010",
+  backgroundColor = "#090909",
   sphereCount = 40,
   ...sceneProps 
 }) {

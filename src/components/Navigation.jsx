@@ -42,7 +42,7 @@ export default function Navigation() {
     <motion.nav
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50"
+      className="fixed top-0 left-0 right-0 z-50 bg-slate-950"
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
@@ -99,7 +99,7 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-slate-900 border-t border-slate-700"
+            className="md:hidden bg-slate-950"
           >
             <div className="container mx-auto px-6 py-4 space-y-2">
               {navItems.map((item) => (
