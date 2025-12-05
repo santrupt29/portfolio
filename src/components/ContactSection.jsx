@@ -23,7 +23,7 @@ const socials = [
   },
   {
     label: "X",
-    link: "https://x.com/SantruptP70660",
+    link: "https://x.com/santrupt_29",
     type: "fa",
     icon: faXTwitter
   }
