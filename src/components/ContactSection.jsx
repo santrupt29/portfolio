@@ -43,13 +43,28 @@ const socials = [
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    console.log('Form submitted:', formData)
+
+    const form = new FormData()
+    form.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY)
+    form.append("name", formData.name)
+    form.append("email", formData.email)
+    form.append("subject", formData.subject)
+    form.append("message", formData.message) 
+    form.append("phone", formData.phone)  
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: form
+    })
+    const result = await response.json()
+    if (response.ok) {
+      alert("Successfully sent!");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      alert("Something went wrong: " + result.message);
+    }
     setIsSubmitting(false)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setFormData({ name: '', email: '', subject: '', message: '' , phone: ''})
   }
 
   const contactInfo = [
@@ -184,6 +199,17 @@ const socials = [
                     placeholder="your@email.com"
                   />
                 </div>
+              </div>
+              <div>
+                <label className="block text-white font-medium mb-2">Contact Number</label>
+                <input
+                  type="phone"
+                  required
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  className="w-full px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:border-amber-500 focus:outline-none transition-colors"
+                  placeholder="+Country Code + Phone Number"
+                />
               </div>
 
               <div>
