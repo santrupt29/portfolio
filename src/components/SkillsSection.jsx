@@ -86,10 +86,10 @@ const skills = [
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-violet-500 bg-clip-text text-transparent">
             Skills & Expertise
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto" />
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-violet-600 mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -101,7 +101,7 @@ const skills = [
               transition={{ duration: 0.8, delay: categoryIndex * 0.2 }}
               className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-amber-500/50 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-amber-400 mb-6 text-center">
+              <h3 className="text-2xl font-bold text-violet-400 mb-6 text-center">
                 {category.category}
               </h3>
               

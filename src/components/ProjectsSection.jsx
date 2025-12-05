@@ -73,10 +73,10 @@ export default function ProjectsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-violet-500 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto" />
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-violet-600 mx-auto" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -104,7 +104,7 @@ export default function ProjectsSection() {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       href={project.live}
-                      className="p-2 bg-amber-500 text-black rounded-full hover:bg-amber-400 transition-colors"
+                      className="p-2 bg-violet-400 text-black rounded-full hover:bg-violet-400 transition-colors"
                     >
                       <Eye size={18} />
                     </motion.a>
@@ -120,7 +120,7 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-violet-300 mb-3 group-hover:text-violet-400 transition-colors">
                     {project.title}
                   </h3>
                   
@@ -132,7 +132,7 @@ export default function ProjectsSection() {
                     {project.tech.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm border border-amber-500/30"
+                        className="px-3 py-1 bg-violet-200/20 text-violet-400 rounded-full text-sm border border-violet-400/30"
                       >
                         {tech}
                       </span>
@@ -143,7 +143,7 @@ export default function ProjectsSection() {
                     <motion.a
                       whileHover={{ scale: 1.05 }}
                       href={project.live}
-                      className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors"
+                      className="flex items-center gap-2 text-violet-400 hover:text-violet-300 transition-colors"
                     >
                       <ExternalLink size={16} />
                       Live Demo

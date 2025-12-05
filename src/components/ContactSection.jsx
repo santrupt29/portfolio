@@ -103,10 +103,10 @@ const socials = [
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-violet-500 bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto mb-6" />
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-violet-600 mx-auto mb-6" />
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Let's collaborate on your next project. I'm always excited to work on innovative ideas.
           </p>
@@ -137,8 +137,8 @@ const socials = [
                   whileHover={{ scale: 1.05, x: 10 }}
                   className="flex items-center gap-4 p-4 bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-lg hover:border-amber-500/50 transition-all duration-300 group"
                 >
-                  <div className="p-3 bg-amber-500/20 rounded-lg group-hover:bg-amber-500/30 transition-colors">
-                    <info.icon className="w-6 h-6 text-amber-400" />
+                  <div className="p-3 bg-violet-900 rounded-lg group-hover:bg-violet-800 transition-colors">
+                    <info.icon className="w-6 h-6 text-violet-300" />
                   </div>
                   <div>
                     <div className="text-sm text-gray-400">{info.label}</div>
@@ -154,7 +154,7 @@ const socials = [
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.2 }}
-      className="text-gray-300 hover:text-amber-400 transition-colors"
+      className="text-gray-300 hover:text-violet-300 transition-colors"
     >
       {social.type === "lucide" ? (
         <social.icon className="w-6 h-6" />
@@ -241,7 +241,7 @@ const socials = [
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-semibold rounded-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-gradient-to-r from-violet-400 to-violet-600 text-black font-semibold rounded-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-black" />

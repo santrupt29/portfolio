@@ -16,7 +16,7 @@ import IcoSphereScene from './components/IcoSphereScene'
 import './App.css'
 
 function App() {
-  const [currentView, setCurrentView] = useState('portfolio') // 'portfolio' or 'interactive'
+  const [currentView, setCurrentView] = useState('portfolio') 
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -48,7 +48,7 @@ function App() {
       {/* View Toggle Button */}
       <button
         onClick={() => setCurrentView(currentView === 'portfolio' ? 'interactive' : 'portfolio')}
-        className="fixed top-4 right-4 z-50 px-4 py-2 bg-amber-500 text-black rounded-lg hover:bg-amber-400 transition-colors font-semibold"
+        className="fixed top-4 right-4 z-50 px-4 py-2 bg-violet-400 text-black rounded-lg hover:bg-violet-300 transition-colors font-semibold"
       >
         {currentView === 'portfolio' ? '3D' : 'Portfolio'}
       </button>

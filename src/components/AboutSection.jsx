@@ -54,10 +54,10 @@ export default function AboutSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-amber-200 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-violet-500 bg-clip-text text-transparent">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-amber-600 mx-auto" />
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-violet-600 mx-auto" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -84,7 +84,7 @@ export default function AboutSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-6 py-3 border border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-black transition-all duration-300 mt-10"
+              className="inline-flex items-center px-6 py-3 border border-violet-400 text-violet-400 rounded-lg hover:bg-violet-400 hover:text-black transition-all duration-300 mt-10"
             >
               Download Resume
             </motion.button>
@@ -108,8 +108,8 @@ export default function AboutSection() {
           >
             {stats.map((stat, index) => (
               <div key={index} className="about-stat">
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 text-center hover:border-amber-500/50 transition-all duration-300">
-                  <div className="text-3xl font-bold text-amber-500 mb-2">
+                <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 text-center hover:border-violet-200/50 transition-all duration-300">
+                  <div className="text-3xl font-bold text-violet-300 mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-300 text-sm">

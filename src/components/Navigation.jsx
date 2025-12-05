@@ -48,12 +48,17 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
          <motion.div
-  whileHover={{ scale: 1.05, textShadow: "0px 0px 8px #fbbf24" }}
+  whileHover={{ scale: 1.05, textShadow: "0px 0px 8px #9333EA" }}
   transition={{ type: "spring", stiffness: 300 }}
-  className="text-2xl font-bold cursor-pointer bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
+//   className="text-2xl font-bold cursor-pointer bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent"
+//   onClick={() => scrollToSection('hero')}
+// >
+className="text-2xl font-semibold cursor-pointer bg-gradient-to-r from-violet-300 to-violet-500 bg-clip-text text-transparent"
   onClick={() => scrollToSection('hero')}
 >
-  <p>&lt;⚙️Santrupt&gt;</p>
+
+  {/* <p>&lt;⚙️SANTRUPT&gt;</p> */}
+  <p>&lt;SANTRUPT&gt;</p>
 </motion.div>
 
 
@@ -65,7 +70,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection(item.id)}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors ${
                   activeSection === item.id
-                    ? 'text-amber-400'
+                    ? 'text-violet-300'
                     : 'text-gray-300 hover:text-white'
                 }`}
                 whileHover={{ scale: 1.05 }}
@@ -74,7 +79,7 @@ export default function Navigation() {
                 {activeSection === item.id && (
                   <motion.div
                     layoutId="activeSection"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-400"
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-violet-300"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -108,7 +113,7 @@ export default function Navigation() {
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left px-3 py-2 rounded-lg transition-colors ${
                     activeSection === item.id
-                      ? 'text-amber-400 bg-amber-400/10'
+                      ? 'text-violet-300 bg-violet-300/10'
                       : 'text-gray-300 hover:text-white hover:bg-slate-800'
                   }`}
                   whileTap={{ scale: 0.98 }}
